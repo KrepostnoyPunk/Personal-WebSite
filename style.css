@@ -332,18 +332,78 @@ span{
 }
 
 
+.projects{
+    background: var(--bg-color);
+}
 
+.projects h2{
+    margin-bottom: 8rem;
+}
 
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
 
+.projects-container .projects-box{
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 2rem;
+    border: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+}
 
+.projects-box:hover{
+    border: 3px solid var(--main-color);
+}
 
+.projects-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
 
+.projects-box:hover img{
+    transform: scale(1.05);
+}
 
+.projects-box .projects-info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 4rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    backdrop-filter: grayscale(100%);
+}
 
+.projects-box .projects-info:hover{
+    background: rgba(0, 0, 0, 0.522);
+    backdrop-filter: grayscale(0%);
+}
 
+.projects-info h4{
+    font-size: 4rem;
+    color: var(--main-color);
+    font-weight: 800;
+}
 
-
-
+.projects-info p{
+    font-size: 1.6rem;
+    margin: 0.3rem 0 1rem;
+    color: var(--main-color);
+}
 
 
 
