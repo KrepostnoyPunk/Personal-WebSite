@@ -255,7 +255,7 @@ span{
 }
 
 .services{
-    background-color: var(--second-color);
+    background-color: var(--bg-color);
 }
 
 .services h2{
@@ -277,7 +277,7 @@ span{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bg-color);
+    background: var(--second-color);
     padding: 3rem 2rem 4rem;
     height: 550px;
     border-radius: 2rem;
@@ -500,6 +500,77 @@ span{
     font-size: 16px;
     color: var(--main-color);
 }
+
+.skills{
+    background: var(--second-color);
+}
+
+.skills .skills-content .section-title{
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+}
+
+.skills .skills-content  .section-text{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.skills .skills-content .tabs {
+    width: 100%;
+    padding: 3rem 9%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.6rem;
+}
+
+.skills-box,
+.tools-box{
+    width: 50%;
+    border: 2px solid var(--main-color);
+}
+
+.skills-tools-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skills-tools-container .skills-box,
+.skills-tools-container .tools-box{
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 2rem;
+    border: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1200px) {
     html{
