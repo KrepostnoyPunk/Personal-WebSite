@@ -32,7 +32,7 @@ body{
     left: 0;
     width: 100%;
     padding: 3rem 9%;
-    background: black;
+    background: rgb(25,25,25);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -412,8 +412,12 @@ span{
     text-align: center;
 }
 
+.see-more{
+    margin-bottom: 3rem;
+}
+
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--second-color);
 }
 
 .contact h2{
@@ -456,7 +460,7 @@ span{
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-color);
+    background-color: var(--bg-color);
 }
 
 .footer .socials{
@@ -497,17 +501,76 @@ span{
     color: var(--main-color);
 }
 
+@media (max-width: 1200px) {
+    html{
+        font-size: 55%;
+    }
+    .projects-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 5rem;
+    }
+}
 
+@media (max-width: 1000px) {
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 995px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        border-left: 3px solid var(--main-color);
+        border-bottom: 3px solid var(--main-color);
+        padding: 1rem 3%;
+        background: rgb(25,25,25);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+        margin: 5rem 4 rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .services-box{
+        margin: 0 5rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .projects h2{
+        margin-bottom: 3rem;
+    }
+}
