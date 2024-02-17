@@ -32,7 +32,7 @@ body{
     left: 0;
     width: 100%;
     padding: 3rem 9%;
-    background: rgb(25,25,25);
+    background: var(--second-color);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -255,7 +255,7 @@ span{
 }
 
 .services{
-    background-color: var(--bg-color);
+    background-color: var(--second-color);
 }
 
 .services h2{
@@ -413,7 +413,7 @@ span{
 }
 
 .see-more{
-    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .contact{
@@ -501,6 +501,7 @@ span{
     color: var(--main-color);
 }
 
+/* 
 .skills{
     background: var(--second-color);
 }
@@ -513,7 +514,7 @@ span{
 
 .skills .skills-content  .section-text{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-top: 2rem;
 }
 
@@ -540,37 +541,28 @@ span{
     gap: 2.5rem;
 }
 
-.skills-tools-container .skills-box,
-.skills-tools-container .tools-box{
-    position: relative;
-    height: 550px;
+.skills-tools-container .skills-box{
+    height: 100%;
     overflow: hidden;
     display: flex;
-    border-radius: 2rem;
     border: 3px solid transparent;
     transition: 0.4s ease-in-out;
 }
 
+.skills-tools-container .tools-box{
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    border: 3px solid transparent;
+    transition: 0.4s ease-in-out;
+    margin-left: 75rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.skills-box .skills-list .skill-card .tooltip,
+.tools-box .tools-list .tool-card .tooltip{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+} */
 
 @media (max-width: 1200px) {
     html{
@@ -579,8 +571,9 @@ span{
     .projects-container{
         padding-bottom: 7rem;
         grid-template-columns: repeat(1, 1fr);
-        margin: 0 5rem;
+        margin: 0 3rem;
     }
+    
 }
 
 @media (max-width: 1000px) {
