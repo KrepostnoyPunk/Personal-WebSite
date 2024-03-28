@@ -26,18 +26,3 @@ menuIconEl.onclick=()=>{
     menuIconEl.classList.toggle('fa-x');
     navbarEl.classList.toggle('active');
 }
-
-
-// function sendEmail(){
-//     Email.send({
-//         Host : "smtp.gmail.com",
-//         Username : "stepansidorov3234@gmail.com",
-//         Password : "",
-//         To : 'stepansidorov3234@gmail.com',
-//         From : fromEmailEl,
-//         Subject : "New Contact Form Enquiry",
-//         Body : "And this is the body"
-//     }).then(
-//       message => alert(message)
-//     );
-// }

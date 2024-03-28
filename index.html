@@ -38,8 +38,8 @@
                 This site will be updated and modified as I develop.
                 Below you will see my services, projects that i've made and ways to contact me.</p>
             <div class="socials">
-                <a href="https://github.com/KrepostnoyPunk"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.reddit.com/user/KrepostnoyLover"><i class="fa-brands fa-reddit"></i></a>
+                <a href="https://github.com/KrepostnoyPunk" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.reddit.com/user/KrepostnoyLover" target="_blank"><i class="fa-brands fa-reddit"></i></a>
             </div>
 
             <a href="#contact" class="btn">HIRE
@@ -70,20 +70,20 @@
             <div class="services-box">
                 <i class="fa-solid fa-palette"></i>
                 <h3>Web Design</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam in unde nisi veniam vitae eius necessitatibus dolorem, ad maxime blanditiis ex quis perferendis iure possimus temporibus. Laudantium nobis laborum non!</p>
-                <a href="" class="btn">Learn More</a>
+                <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_design" class="btn" target="_blank">Learn More</a>
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam in unde nisi veniam vitae eius necessitatibus dolorem, ad maxime blanditiis ex quis perferendis iure possimus temporibus. Laudantium nobis laborum non!</p>
-                <a href="" class="btn">Learn More</a>
+                <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.</p>
+                <a href="https://en.wikipedia.org/wiki/Web_development" class="btn" target="_blank">Learn More</a>
             </div>
             <div class="services-box">
                 <i class="fa-solid fa-pen-nib"></i>
                 <h3>Copywriting</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam in unde nisi veniam vitae eius necessitatibus dolorem, ad maxime blanditiis ex quis perferendis iure possimus temporibus. Laudantium nobis laborum non!</p>
-                <a href="" class="btn">Learn More</a>
+                <p>Copywriting is the act or occupation of writing text for the purpose of advertising or other forms of marketing. Copywriting is aimed at selling products or services. The product, called copy or sales copy, is written content that aims to increase brand awareness and ultimately persuade a person or group to take a particular action.</p>
+                <a href="https://en.wikipedia.org/wiki/Copywriting" class="btn" target="_blank">Learn More</a>
             </div>
         </div>
     </section>
@@ -205,26 +205,29 @@
             <img src="img/Снимок экрана (126).png" alt="">
             <div class="projects-info">
                 <h4>iMAGINARY</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis corrupti doloribus libero nihil debitis, asperiores, officiis rem tenetur ipsum veritatis sed! Ex culpa dignissimos natus id delectus. Animi, officia?</p>
+                <p>Image searchAble gallery using Unsplash API  to fetch the data.</p>
+                <a href="https://krepostnoypunk.github.io/iMAGINARY-search-gallery-/" class="btn" target="_blank">Learn More</a>
             </div>
         </div>
         <div class="projects-box">
             <img src="img/Снимок экрана (127).png" alt="">
             <div class="projects-info">
                 <h4>Notify</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis corrupti doloribus libero nihil debitis, asperiores, officiis rem tenetur ipsum veritatis sed! Ex culpa dignissimos natus id delectus. Animi, officia?</p>
+                <p>WorkAble note app using localStorage to save and keep your notes.</p>
+                <a href="https://krepostnoypunk.github.io/Note-App/" class="btn" target="_blank">Learn More</a>
             </div>
         </div>
         <div class="projects-box">
             <img src="img/Снимок экрана (143).png" alt="">
             <div class="projects-info">
                 <h4>Weather App</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis corrupti doloribus libero nihil debitis, asperiores, officiis rem tenetur ipsum veritatis sed! Ex culpa dignissimos natus id delectus. Animi, officia?</p>
+                <p>Weather showing app using Open Weather Map API.</p>
+                <a href="https://krepostnoypunk.github.io/Simple-Weather-App/" class="btn" target="_blank">Learn More</a>
             </div>
         </div>
     </div>
     <div class="see-more-container">
-        <a href="https://github.com/KrepostnoyPunk" class="btn see-more">SEE MORE
+        <a href="https://github.com/KrepostnoyPunk" class="btn see-more" target="_blank">SEE MORE
             <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
         </a>
     </div>
@@ -232,20 +235,21 @@
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form onsubmit="sendEmail(); reset(); return false">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="input-box">
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="email" id="email" placeholder="Email">
+                <input type="hidden" name="access_key" value="1efe8b0f-ff84-4197-a50f-9bd7e2749b7e">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <input type="email" name="email" id="email" placeholder="Email">
             </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
     <!-- FOOTER SECTION -->
     <footer class="footer">
         <div class="socials">
-            <a href="https://github.com/KrepostnoyPunk"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.reddit.com/user/KrepostnoyLover"><i class="fa-brands fa-reddit"></i></a>
+            <a href="https://github.com/KrepostnoyPunk" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.reddit.com/user/KrepostnoyLover" target="_blank"><i class="fa-brands fa-reddit" ></i></a>
         </div>
         <ul class="list">
             <li>
